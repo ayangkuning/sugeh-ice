@@ -57,43 +57,43 @@ jobs:
   JIN_01:
     <<: *commonSteps
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
   JIN_02:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_03:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     steps:
       - checkout
   JIN_04:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_05:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_06:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_07:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_08:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_09:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_10:
     docker:
-      - image: circleci/buildpack-deps:bionic-scm
+      - image: cimg/python:3.8
     <<: *commonSteps
   JIN_11:
     docker:

